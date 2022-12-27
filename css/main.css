@@ -19,13 +19,13 @@ body {
   margin: 0;
   font-size: 16px;
   line-height: 1.5;
-  font-family:"Arial" sans-serif;
+  font-family: Bebas Neue sans-serif;
   background-color: #fff;
   color: #222;
 }
 
 img {
-  min-width: 100%;
+  max-width: 100%;
   height: auto;
 }
 
@@ -33,7 +33,7 @@ img {
 /* CONTAINER  */
 .container {
   width: 100%;
-  min-width: 1200px;
+  max-width: 1200px;
   padding-left: 50px;
   padding-right: 50px;
   margin-left: auto;
@@ -45,4 +45,215 @@ img {
 /* MAIN CONTENT  */
 .main-content {
   flex-grow: 1;
+  display: flex;
+  flex-direction: column;
 }
+
+/* GLOBAL WRAPPER  */
+.global-wrapper {
+  flex-grow: 1;
+  display: flex;
+  width: 100%;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* HERO STYLES  */
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 600px;
+  padding: 24px;
+  background-image: url(../img/articels-bg-img.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center bottom;
+}
+.hero-content {
+  width: 100%;
+  max-width: 285px;
+}
+.hero-heading {
+  margin-top: 0;
+  margin-bottom: 24px;
+  font-family:"Bebas Neue" ;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: normal;
+  letter-spacing: 2px;
+  color: #fff;
+  text-transform: uppercase;
+}
+.hero-link {
+  display: inline-block;
+  background-color: #1e90ff;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.hero-link:hover {
+  opacity: 0.8;
+}
+
+.hero-link:active {
+  opacity: 0.6;
+}
+
+
+.hero-link-inner {
+  display: flex;
+  padding: 12px 24px;
+}
+
+.hero-link-inner::before {
+  width: 20px;
+  height: 20px;
+  margin-right: 12px;
+  background-image:url(../img/star-icons.svg);
+  background-repeat: no-repeat;
+  background-size:contain;
+  background-position: center;
+  content:"";
+}
+
+.hero-link-text {
+  font-family: "Bebas Neue";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+/* box content */
+.box-right {
+  width: 600px;
+  height: auto;
+  padding: 54px 54px;
+  background-color:#FEFEFE;
+
+}
+
+.box-content {
+  margin-bottom: 24px;
+}
+
+.box-heading {
+  font-family: "Bebas Neue";
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+  margin-top: 0;
+  margin-bottom: 24px;
+}
+.box-hr {
+  height: 1px;
+  border: none;
+  background-color: #999999;
+  margin-top: 0;
+  margin-bottom: 24px;
+}
+
+.box-img {
+  width: 160px;
+  height: 90px;
+  border-radius: 4px;
+}
+
+.box-model {
+  display: flex;
+}
+
+.box-model:not(:last-child) {
+  margin-bottom: 24px;
+}
+
+
+.box-content-right {
+  padding: 16px;
+  flex-grow: 1;
+}
+.heading-box {
+  font-family: "Bebas Neue";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  margin-top: 0;
+  margin-bottom: 4px;
+}
+
+.heading-box a {
+  text-decoration: none;
+  color:#222222;
+}
+
+.heading-box a:hover {
+  color:#1E90FF;
+}
+
+.heading-box a:active {
+  opacity: 0.6;
+}
+
+.content-bottom {
+  display: flex;
+  align-items: center;
+}
+
+.content-bottom img {
+  margin-right: 5px;
+  width: 13px;
+  height: 13px;
+}
+
+.text {
+  font-family: "roboto condensed" ;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color:#888888;
+}
+
+.text:not(:last-child) {
+  margin-right: 24px;
+}
+
+.box-button {
+  width: 100%;
+  height: 40px;
+  font-family:"roboto condensed";
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  border:none;
+  background-color: #1E90FF;
+  color: #fff;
+  border-radius: 4px;
+}
+
+.box-button:hover {
+  opacity: 0.8;
+}
+
+.box-button:active {
+  opacity: 0.6;
+}
+
+/* background retina  */
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) {
+  .hero {
+    background-image: url(../img/articels-bg-img@2x.jpg);
+  }
+}
+
+
+/* roboto condensed 400 700  */
